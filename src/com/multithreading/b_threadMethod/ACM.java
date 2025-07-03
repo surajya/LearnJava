@@ -1,4 +1,4 @@
-package com.multithreading.threadMethod;
+package com.multithreading.b_threadMethod;
 
 //Thread class method
 //1. start: used to start new thread
@@ -11,6 +11,9 @@ package com.multithreading.threadMethod;
 //If the thread is in a blocked state (sleep(), wait(), join()) — calling interrupt() will: 1. Wake it up prematurely 2.Throw an InterruptedException
 //7. Thread.yield(): To allow other equal-priority threads a chance to run.  It’s a hint to the thread scheduler — not a command.
 //8. User Thread VS  Daemon Thread: User Thread-> A chef cooking a dish. Daemon Thread->A helper cleaning the kitchen. Once the chef (user thread) finishes, the restaurant (JVM) closes — the helper (daemon) is forced to stop. Always set .setDaemon(true) before calling .start(). When all user threads finish, daemon threads are automatically stopped, even if they are still running.
+
+//ACM acm = new ACM();
+// Thread t = new Thread(acm); Here declaration of thread useful when ACM implements runnable interface. otherwise acm.start().
 
 
 

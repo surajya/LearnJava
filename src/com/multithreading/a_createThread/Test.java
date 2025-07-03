@@ -1,4 +1,4 @@
-package com.multithreading.createThread;
+package com.multithreading.a_createThread;
 
 public class Test {
 
